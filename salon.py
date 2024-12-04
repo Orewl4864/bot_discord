@@ -8,8 +8,7 @@ import os
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-import asyncio
-import random
+import asyncio  # module qui rajoute la notion du temps
 from keep_alive import keep_alive
 
 intents = discord.Intents.all()
@@ -129,6 +128,7 @@ async def clear(ctx, amount: str):
 @bot.command()
 @commands.has_permissions(send_messages=True)  # Vérifie que l'utilisateur a la permission d'envoyer des messages
 async def srmsg(ctx, amount: int):
+    import random
     # Liste de mots aléatoires
     words = [
         "chat", "chien", "arbre", "maison", "voiture",
