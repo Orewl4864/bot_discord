@@ -4,6 +4,8 @@ Pour lancer le bot en mode local :
 - lancer le bot (python salon.py)
 """
 
+print("5min ecoulées")
+
 import os
 from dotenv import load_dotenv
 import discord
